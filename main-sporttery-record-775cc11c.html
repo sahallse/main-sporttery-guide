@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞彩网 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+            background-color: #f9f6f0;
+            color: #2c3e3c;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 820px;
+            width: 100%;
+            background: #fffcf7;
+            border-radius: 28px;
+            padding: 2.8rem 2.2rem 2.8rem 2.2rem;
+            box-shadow: 0 8px 30px rgba(0, 20, 10, 0.04);
+            border: 1px solid #eae4d9;
+            transition: all 0.2s ease;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.8rem 1.2rem;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+            color: #1f3b36;
+            border-left: 4px solid #b8a287;
+            padding-left: 1rem;
+        }
+
+        .subhead {
+            font-size: 0.95rem;
+            color: #7c8b83;
+            margin-bottom: 2.2rem;
+            padding-left: 1.25rem;
+            border-left: 4px solid transparent;
+        }
+
+        .intro {
+            font-size: 1.08rem;
+            margin-bottom: 2rem;
+            padding: 0 0.2rem;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2.2rem 0 2.6rem 0;
+        }
+
+        @media (max-width: 540px) {
+            .highlight-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        .card {
+            background: #f2ede4;
+            border-radius: 20px;
+            padding: 1.6rem 1.4rem;
+            border: 1px solid #e3dcd0;
+            transition: box-shadow 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(120, 100, 70, 0.05);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1d3b34;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #3e514a;
+        }
+
+        .use-suggestion {
+            background: #e9e3d7;
+            border-radius: 24px;
+            padding: 1.6rem 2rem;
+            margin: 2.5rem 0 2.2rem 0;
+            border-left: 6px solid #b39a7e;
+        }
+
+        .use-suggestion h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+            color: #1a312c;
+        }
+
+        .use-suggestion p {
+            font-size: 1rem;
+            color: #2b423c;
+        }
+
+        .notice-block {
+            background: #f7f2e9;
+            border-radius: 18px;
+            padding: 1.3rem 1.8rem;
+            margin: 2rem 0 2rem 0;
+            border: 1px solid #d9cfbf;
+            color: #3f554d;
+            font-size: 0.95rem;
+        }
+
+        .notice-block span {
+            font-weight: 500;
+            color: #7e6b55;
+        }
+
+        .faq-mini {
+            margin: 2.5rem 0 0.8rem 0;
+            border-top: 1px dashed #dad0c0;
+            padding-top: 1.8rem;
+        }
+
+        .faq-mini h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #24423a;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+
+        .faq-item strong {
+            color: #3e5b51;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-item p {
+            margin-left: 0.2rem;
+            color: #445b53;
+            font-size: 0.95rem;
+        }
+
+        .footer-note {
+            margin-top: 2.8rem;
+            font-size: 0.85rem;
+            color: #8f9d93;
+            text-align: center;
+            border-top: 1px solid #e5ddd1;
+            padding-top: 1.5rem;
+        }
+
+        a {
+            color: #3f6a5a;
+            text-decoration: none;
+            border-bottom: 1px solid #c3b7a6;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 450;
+        }
+
+        a:hover {
+            color: #1b463b;
+            border-bottom-color: #5c7c6c;
+        }
+
+        .inline-link {
+            border-bottom: 1px solid #bdaa93;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e1d7c8;
+            margin: 1.8rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>竞彩网 · 产品说明</h1>
+    <div class="subhead">一份关于网站用途与定位的简短介绍</div>
+
+    <div class="intro">
+        如果你恰好遇到一个名叫“竞彩网”的站点，第一反应可能是——它是做什么的？是资讯平台，是数据查询工具，还是另有侧重？<br><br>
+        简单说，<a href="https://main-sporttery.com" class="inline-link">竞彩网</a> 围绕体育赛事与竞猜类信息提供内容聚合与导航服务。它既不宣称自己是“官方唯一入口”，也不会用浮夸的标语引导操作。整个站点给人的感觉更像一个安静的陈列架：信息在这里排列，剩下的由你判断。
+    </div>
+
+    <!-- 三个亮点卡片 -->
+    <div class="highlight-grid">
+        <div class="card">
+            <h3>赛事覆盖清晰</h3>
+            <p>足球、篮球等主流联赛的数据与赛程以结构化方式呈现，方便快速浏览而非沉浸式投注。</p>
+        </div>
+        <div class="card">
+            <h3>界面偏重可读性</h3>
+            <p>没有闪烁的动效或催促性弹窗。文字与色彩搭配偏向阅读习惯，尊重浏览者的节奏。</p>
+        </div>
+        <div class="card">
+            <h3>信息组织偏目录式</h3>
+            <p>从联赛列表到对阵信息，更接近一个索引页面。适合想先了解框架、再决定下一步的用户。</p>
+        </div>
+        <div class="card">
+            <h3>无明显商业压迫感</h3>
+            <p>页面上没有铺满横幅或诱导注册的按钮，整体风格偏向实用与克制。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议引用块 -->
+    <div class="use-suggestion">
+        <h2>使用建议</h2>
+        <p>
+            如果你希望快速定位某场赛事的基本信息、查看联赛结构或对比不同比赛的数据维度，不妨从 <a href="https://main-sporttery.com">竞彩网</a> 的导航入口开始。建议先花一两分钟熟悉栏目分类，再根据实际需求进入相应页面。保持对信息本身的关注，比依赖任何单一渠道更可靠。
+        </p>
+    </div>
+
+    <!-- 可信但克制的访问说明 -->
+    <div class="notice-block">
+        <span>· 访问说明 ·</span><br>
+        竞彩网是一个提供体育竞猜相关信息的网站，不直接处理交易或账户操作。请根据你所在地区的法规，自行判断使用方式。本页面仅介绍其内容特征，不构成任何形式的使用建议或行为引导。
+    </div>
+
+    <!-- FAQ 摘要 (仅两个问题) -->
+    <div class="faq-mini">
+        <h4>常见疑问摘要</h4>
+        <div class="faq-item">
+            <strong>这个网站跟官方机构有什么关系？</strong>
+            <p>从页面内容看，它更接近一个信息汇集站点，而非某个监管机构的直属平台。具体关系建议查阅网站自身的声明或关于页面。</p>
+        </div>
+        <div class="faq-item">
+            <strong>我需要注册或付费才能浏览吗？</strong>
+            <p>目前公开可见的赛事列表与基础信息不需要登录。部分功能或深度数据可能属于另外的模块，以实际页面为准。</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-note">
+        页面描述仅基于公开内容梳理 · 2025
+    </div>
+</div>
+</body>
+</html>
